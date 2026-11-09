@@ -1,0 +1,26 @@
+{
+  "name": "shipnow-api",
+  "version": "6.0.0",
+  "private": true,
+  "description": "ShipNow API - Preentrega 6: testing funcional con Mocha, Chai y Supertest",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha --require tests/setup.js \"tests/**/*.test.js\" --timeout 15000"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0",
+    "supertest": "^7.1.0"
+  }
+}
